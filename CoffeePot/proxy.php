@@ -87,7 +87,7 @@ function main() {
         }
 
         if ( file_exists($js_min_full_path) ) {
-            readfile($js_full_path);
+            readfile($js_min_full_path);
             return;
         }
 
@@ -121,11 +121,11 @@ function main() {
     }
 
     // Output
-    if ( $request_min ) {
-        readfile($js_min_full_path);
-    } else {
+    // if ( $request_min ) {
+    //     readfile($js_min_full_path);
+    // } else {
         readfile($js_full_path);
-    }
+    // }
 }
 
 main();
