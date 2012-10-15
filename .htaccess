@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteRule \.js$ /CoffeePot/proxy.php?js=%{REQUEST_URI} [L]
